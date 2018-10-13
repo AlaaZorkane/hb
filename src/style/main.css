@@ -1,0 +1,34 @@
+/* GENERAL */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    color: #333;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0.5rem;
+    background-color: #222222;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* APP CONTAINER */
+.AppContainer {
+    position: relative;
+    height: 95vh;
+    z-index: 1;
+}

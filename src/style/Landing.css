@@ -1,0 +1,46 @@
+.landContainer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.kdo {
+    height: 40vmin;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    transition: all .2s ease-in-out;
+}
+.kdo:hover {
+    height: 47vmin;
+    animation-name: shake;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+@keyframes shake {
+    0%, 100% {
+        transform: translate3d(0, 0, 0) translateX(-50%) translateY(-50%);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate3d(-10px, 0, 0) translateX(-50%) translateY(-50%);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate3d(10px, 0, 0) translateX(-50%) translateY(-50%);
+    }
+}
+h1 {
+    font-style: italic;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.38);
+    font-size: calc(10px + 2vmin);
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    transition: all 2s ease-in;
+}
